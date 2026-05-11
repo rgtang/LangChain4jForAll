@@ -1,0 +1,2 @@
+#!/bin/bash
+java -jar target/java-ai-agent-1.0.0.jar

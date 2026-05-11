@@ -1,0 +1,31 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: java-ai-agent
+
+# AI 配置
+ai:
+  # DeepSeek API Key (请替换为你的真实 API Key)
+  api-key: sk-7c4ff876167a4afc80b452be638d0eb8
+  # DeepSeek API Base URL
+  base-url: https://api.deepseek.com/v1
+  # 模型名称
+  model: deepseek-chat
+  # 温度参数 (0.0-1.0)
+  temperature: 0.7
+  # 最大 Token 数
+  max-tokens: 2000
+  # 超时时间（秒）
+  timeout: 60
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.aiagent: DEBUG
+    dev.langchain4j: DEBUG
+    dev.langchain4j.model.openai: DEBUG
+    dev.langchain4j.model.openai.OpenAiStreamingChatModel: DEBUG
+    dev.langchain4j.model.openai.OpenAiChatModel: DEBUG
