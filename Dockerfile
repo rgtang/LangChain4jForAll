@@ -1,5 +1,5 @@
-# 构建阶段（maven 打包）
-FROM maven:3.8.6-openjdk-17 AS builder
+# 构建阶段（使用正确的 Maven 镜像名）
+FROM maven:3.8-openjdk-17 AS builder
 WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline
